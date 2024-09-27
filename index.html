@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload and Preview</h1>
+        
+        <!-- File Upload Section -->
+        <input type="file" id="fileInput" accept="image/*,audio/*,video/*,.pdf">
+        
+        <!-- Preview Section -->
+        <div id="previewSection" class="preview-section">
+          <p>No file chosen</p>
+        </div>
+    
+        <!-- Image Manipulation (Only shown for images) -->
+        <button id="manipulateImageBtn" style="display: none;">Manipulate Image</button>
+    
+        <!-- Upload Button -->
+        <button id="uploadBtn" style="display: none;">Upload</button>
+    
+        <!-- User Authentication (Optional) -->
+        <div id="authSection" class="auth-section">
+          <h2>User Authentication</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter Username">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter Password">
+          <button id="loginBtn">Login</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+
+</body>
+</html>
